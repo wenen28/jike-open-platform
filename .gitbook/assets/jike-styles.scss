@@ -1,0 +1,171 @@
+/*
+    Colors:
+*/
+
+/* 主色 */
+$color-jike-blue: #03a9f4;
+$color-jike-yellow: #ffe411;
+
+/* 文字色 */
+$color-grey-1: #404040;
+$color-grey-2: #808080;
+$color-grey-3: #bfbfbf;
+$color-grey-4: #dbdbdb;
+$color-grey-5: #f0f2f5;
+
+/* 辅助色 */
+$color-jike-green: #1aaf5d;
+$color-jike-red: #e4593e;
+
+/*
+    Font Styles:
+*/
+
+
+/* Global font style */
+/* Heading 1 font style */
+$font-heading-1-font-size: 20px;
+$font-heading-1-line-height: normal;
+$font-heading-1-text-align: start;
+$font-heading-1-color: #404040;
+$font-heading-1-letter-spacing: 0.31px;
+$font-heading-1-font-style: normal;
+$font-heading-1-font-weight: 500;
+$font-heading-1-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-heading-1 () {
+  font-size: $font-heading-1-font-size;
+  line-height: $font-heading-1-line-height;
+  text-align: $font-heading-1-text-align;
+  color: $font-heading-1-color;
+  letter-spacing: $font-heading-1-letter-spacing;
+  font-style: $font-heading-1-font-style;
+  font-weight: $font-heading-1-font-weight;
+  font-family: $font-heading-1-font-family;
+}
+
+/* Heading 2 font style */
+$font-heading-2-font-size: 18px;
+$font-heading-2-line-height: normal;
+$font-heading-2-text-align: left;
+$font-heading-2-color: #404040;
+$font-heading-2-letter-spacing: 0.28px;
+$font-heading-2-font-style: normal;
+$font-heading-2-font-weight: 400;
+$font-heading-2-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-heading-2 () {
+  font-size: $font-heading-2-font-size;
+  line-height: $font-heading-2-line-height;
+  text-align: $font-heading-2-text-align;
+  color: $font-heading-2-color;
+  letter-spacing: $font-heading-2-letter-spacing;
+  font-style: $font-heading-2-font-style;
+  font-weight: $font-heading-2-font-weight;
+  font-family: $font-heading-2-font-family;
+}
+
+/* Heading 3 font style */
+$font-heading-3-font-size: 16px;
+$font-heading-3-line-height: normal;
+$font-heading-3-text-align: left;
+$font-heading-3-color: #404040;
+$font-heading-3-letter-spacing: 0.28px;
+$font-heading-3-font-style: normal;
+$font-heading-3-font-weight: 400;
+$font-heading-3-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-heading-3 () {
+  font-size: $font-heading-3-font-size;
+  line-height: $font-heading-3-line-height;
+  text-align: $font-heading-3-text-align;
+  color: $font-heading-3-color;
+  letter-spacing: $font-heading-3-letter-spacing;
+  font-style: $font-heading-3-font-style;
+  font-weight: $font-heading-3-font-weight;
+  font-family: $font-heading-3-font-family;
+}
+
+/* Label Blue font style */
+$font-label-blue-font-size: 14px;
+$font-label-blue-line-height: normal;
+$font-label-blue-text-align: left;
+$font-label-blue-color: #03a9f4;
+$font-label-blue-letter-spacing: 0.22px;
+$font-label-blue-font-style: normal;
+$font-label-blue-font-weight: 400;
+$font-label-blue-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-label-blue () {
+  font-size: $font-label-blue-font-size;
+  line-height: $font-label-blue-line-height;
+  text-align: $font-label-blue-text-align;
+  color: $font-label-blue-color;
+  letter-spacing: $font-label-blue-letter-spacing;
+  font-style: $font-label-blue-font-style;
+  font-weight: $font-label-blue-font-weight;
+  font-family: $font-label-blue-font-family;
+}
+
+/* Label Grey font style */
+$font-label-grey-font-size: 14px;
+$font-label-grey-line-height: normal;
+$font-label-grey-text-align: left;
+$font-label-grey-color: #808080;
+$font-label-grey-letter-spacing: 0.22px;
+$font-label-grey-font-style: normal;
+$font-label-grey-font-weight: 400;
+$font-label-grey-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-label-grey () {
+  font-size: $font-label-grey-font-size;
+  line-height: $font-label-grey-line-height;
+  text-align: $font-label-grey-text-align;
+  color: $font-label-grey-color;
+  letter-spacing: $font-label-grey-letter-spacing;
+  font-style: $font-label-grey-font-style;
+  font-weight: $font-label-grey-font-weight;
+  font-family: $font-label-grey-font-family;
+}
+
+/* Para 1 font style */
+$font-para-1-font-size: 14px;
+$font-para-1-line-height: normal;
+$font-para-1-text-align: left;
+$font-para-1-color: #404040;
+$font-para-1-letter-spacing: 0.22px;
+$font-para-1-font-style: normal;
+$font-para-1-font-weight: 400;
+$font-para-1-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-para-1 () {
+  font-size: $font-para-1-font-size;
+  line-height: $font-para-1-line-height;
+  text-align: $font-para-1-text-align;
+  color: $font-para-1-color;
+  letter-spacing: $font-para-1-letter-spacing;
+  font-style: $font-para-1-font-style;
+  font-weight: $font-para-1-font-weight;
+  font-family: $font-para-1-font-family;
+}
+
+/* Para 2 font style */
+$font-para-2-font-size: 12px;
+$font-para-2-line-height: normal;
+$font-para-2-text-align: left;
+$font-para-2-color: #404040;
+$font-para-2-letter-spacing: 0.22px;
+$font-para-2-font-style: normal;
+$font-para-2-font-weight: 400;
+$font-para-2-font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+
+@mixin font-para-2 () {
+  font-size: $font-para-2-font-size;
+  line-height: $font-para-2-line-height;
+  text-align: $font-para-2-text-align;
+  color: $font-para-2-color;
+  letter-spacing: $font-para-2-letter-spacing;
+  font-style: $font-para-2-font-style;
+  font-weight: $font-para-2-font-weight;
+  font-family: $font-para-2-font-family;
+}
