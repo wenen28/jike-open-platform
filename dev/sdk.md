@@ -2,7 +2,7 @@
 
 ####  ⚠️IMPORTANT ⚠️
 
-You need to download developer plugin before developing. Link is on the way.
+You need to [download chrome developer plugin](https://cdn.ruguoapp.com/open-service/jike-open-extension.crx) first. 
 
 ### Installation
 
@@ -16,7 +16,7 @@ npm install @jike/open-sdk --save
 {% code-tabs-item title="main.ts" %}
 ```typescript
 import { JikeOpenSDK } from '@jike/open-sdk'
-// FIST OF ALL: apply for your application at jike open platform.
+// FIRST OF ALL: apply for your application at jike open platform.
 // replace <OPEN_APP_ID> with your openAppId.
 const sdk = new JikeOpenSDK(<OPEN_APP_ID>)
 // or
