@@ -2,7 +2,7 @@
 
 ####  ⚠️IMPORTANT ⚠️
 
-You need to download developer plugin while developing. Link is on the way.
+You need to download developer plugin before developing. Link is on the way.
 
 ### Installation
 
@@ -12,48 +12,60 @@ npm install @jike/open-sdk --save
 
 ### Configuration
 
-```javascript
-import { JikeOpenJsSDK } from 'jike-open-js-sdk'
+{% code-tabs %}
+{% code-tabs-item title="main.ts" %}
+```typescript
+import { JikeOpenSDK } from '@jike/open-sdk'
 // FIST OF ALL: apply for your application at jike open platform.
-// replace <openAppId> with your openAppId.
-const sdk = new JikeOpenJsSDK(<openAppId>)
+// replace <OPEN_APP_ID> with your openAppId.
+const sdk = new JikeOpenSDK(<OPEN_APP_ID>)
 // or
-const sdk = new JikeOpenJsSDK({
-  openAppId: <openAppId>
+const sdk = new JikeOpenSDK({
+  openAppId: <OPEN_APP_ID>
 })
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### API
 
-> sdkInstance.getUserInfo\(\)
+#### `sdk.getUserInfo()`
 
-* available version 4.15.0
+* App version &gt;= 4.15.0.
+* Get current user info.
 
-```javascript
-sdkInstance.getUserInfo(): Promise<UserInfo>
-```
+```typescript
+sdk.getUserInfo(): Promise<UserInfo>
 
-> sdkInstance.getMessages\(\)
-
-* available version 4.15.0
-
-```javascript
-sdkInstance.getMessages(): Promise<{
-  message: Array<Message>
-  count: number
-}>
+sdk.getUserInfo().then(({user}) => {
+  console.log(user)
+  /* 
+  {
+    id: "SunskyXH",
+    isLoginUser: true,
+    screenName: "香香鸡"
+    gender: "MALE",
+    profileImage: {
+      format: "jpeg"
+      middlePicUrl: "https://cdn.ruguoapp.com/FotVPHP2tLYHZ3W4zk3urw1GVD9i.jpg?imageMogr2/auto-orient/format/jpeg/thumbnail/300x300%3E/quality/30"
+      picUrl: "https://cdn.ruguoapp.com/FotVPHP2tLYHZ3W4zk3urw1GVD9i.jpg?imageMogr2/auto-orient/format/jpeg/thumbnail/1000x1000%3E/quality/30"
+      thumbnailUrl: "https://cdn.ruguoapp.com/FotVPHP2tLYHZ3W4zk3urw1GVD9i.jpg?imageMogr2/auto-orient/format/jpeg/thumbnail/120x120%3E/quality/30"
+    },
+  }
+  */
 ```
 
 ### Interface
 
-> UserInfo
+#### `UserInfo`
 
-```javascript
+```typescript
 interface UserInfo {
   user: {
     id: string,
     isLoginUser: boolean,
     screenName: string,
+    gender: 'MALE' | 'FEMALE'
     profileImage: {
       format: string,
       picUrl: string,
@@ -62,7 +74,5 @@ interface UserInfo {
     }
   }
 }
-
-type Message = Record<string, any>
 ```
 
