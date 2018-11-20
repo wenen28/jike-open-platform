@@ -2,7 +2,7 @@
 
 ####  ⚠️IMPORTANT ⚠️
 
-You need to [download chrome developer plugin](https://cdn.ruguoapp.com/open-service/jike-open-extension.crx) first. 
+You need to [download the chrome developer plugin](https://cdn.ruguoapp.com/open-service/jike-open-extension.crx) first. 
 
 ### Installation
 
