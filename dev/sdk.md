@@ -16,13 +16,9 @@ npm install @jike/open-sdk --save
 {% code-tabs-item title="main.ts" %}
 ```typescript
 import { JikeOpenSDK } from '@jike/open-sdk'
-// FIRST OF ALL: apply for your application at jike open platform.
-// replace <OPEN_APP_ID> with your openAppId.
+// FIRST OF ALL: get your app id from jike open platform.
+// Replace <OPEN_APP_ID> with your app id.
 const sdk = new JikeOpenSDK(<OPEN_APP_ID>)
-// or
-const sdk = new JikeOpenSDK({
-  openAppId: <OPEN_APP_ID>
-})
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
