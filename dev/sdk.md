@@ -49,6 +49,7 @@ sdk.getUserInfo().then(({user}) => {
     },
   }
   */
+  })
 ```
 
 ### Interface
