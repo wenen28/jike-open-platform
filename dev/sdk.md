@@ -19,11 +19,34 @@ import { JikeOpenSDK } from '@jike/open-sdk'
 // FIRST OF ALL: get your app id from jike open platform.
 // Replace <OPEN_APP_ID> with your app id.
 const sdk = new JikeOpenSDK(<OPEN_APP_ID>)
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+* ⚠️you should call other methods\(like `sdk.getUserInfo`\) after  `sdk.ready()` . For Example:
+
+{% code-tabs %}
+{% code-tabs-item title="main.ts" %}
+```typescript
+const init = async () => {
+  await sdk.ready()
+  ReactDOM.render(<App />, document.getElementById('root'))
+}
+if (sdk.isInJikeApp()) {
+  init()
+}
+
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
 ### API
+
+#### `sdk.isInJikeApp()`
+
+* App version &gt;= 4.15.0.
+* Return a boolean represent for whether runtime is inside Jike App.
 
 #### `sdk.getUserInfo()`
 
