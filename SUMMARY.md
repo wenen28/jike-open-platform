@@ -9,7 +9,7 @@
 ## 设计
 
 * [圈子插件指南](design/widget-design-guide.md)
-* [Web 页指南](design/web-design-guide.md)
+* [普通 Web 指南](design/web-design-guide.md)
 * [设计规范与资源](design/principles-and-resources.md)
 
 ## FAQ
